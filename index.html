@@ -4,28 +4,54 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- load MUI -->
+        <link
+            href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
         <link
             rel="shortcut icon"
             href="./img/favicon.ico"
             type="image/x-icon"
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
         <title>Cat Clicker</title>
     </head>
-    <body>
-        <section class="cat-list">
-            <h1>Cat List</h1>
-            <ul class="list"></ul>
-        </section>
-        <section class="cat-content">
-            <div class="cats" id="Alex"></div>
-            <div class="cats" id="Brian"></div>
-            <div class="cats" id="Mimi"></div>
-            <div class="cats" id="Peter"></div>
-            <div class="cats" id="Michael"></div>
-            <div class="cats" id="Lala"></div>
+    <body class="mui-container-fluid">
+        <section class="mui-row">
+            <div class="cat-list mui-col-md-1 mui-panel">
+                <h1 class="mui--text-display1">Cat List</h1>
+                <ul class="list"></ul>
+            </div>
+
+            <div
+                class="cat-content mui-col-md-11"
+                onmousedown="return false;"
+                onselectstart="return false;"
+            >
+                <div class="cats" id="Alex"></div>
+                <div class="cats" id="Brian"></div>
+                <div class="cats" id="Mimi"></div>
+                <div class="cats" id="Peter"></div>
+                <div class="cats" id="Michael"></div>
+                <div class="cats" id="Lala"></div>
+                <div class="cats" id="Mumu"></div>
+                <div class="cats" id="Jezzy"></div>
+                <div class="cats" id="Tom"></div>
+                <div class="cats" id="Tim"></div>
+                <div class="cats" id="Nancy"></div>
+                <div class="cats" id="Taro"></div>
+            </div>
         </section>
 
-        <script src="./script.js"></script>
+        <footer class="mui-row mui-panel">
+            <div class="mui-col">
+                Thank you for all cats photo from
+                <a href="https://unsplash.com">Unsplash</a>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>
