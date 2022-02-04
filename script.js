@@ -1,9 +1,13 @@
-const cat = document.getElementsByTagName("img");
-const number = document.getElementsByTagName("h2");
-let i = 0;
+const cat = document.getElementsByTagName("div");
+const catName = document.getElementsByTagName("h2");
+const clickTimes = document.getElementsByTagName("h3");
 
-cat[0].addEventListener("click", function (e) {
-    e.preventDefault();
-    i++;
-    number[0].textContent = `Your click is ${i} times!`;
-});
+for (let i = 0; i < cat.length; i++) {
+    let click = 0;
+    cat[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        click++;
+        catName[i].textContent = `Cat Name : ${cat[i].id}`;
+        clickTimes[i].textContent = `Your click is ${click} times!`;
+    });
+}
